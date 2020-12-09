@@ -3,6 +3,7 @@ package qualitrix;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -44,8 +45,17 @@ public class ToolsQADemoSite {
 		driver.findElement(By.xpath("//label[contains(text(),'Sports')]")).click();
 //		driver.findElement(By.id("currentAddress")).sendKeys("Bengaluru");
 //		Thread.sleep(3000);
-//		driver.findElement(By.id("submit")).click();
-//		Thread.sleep(3000);
+		WebElement submit = driver.findElement(By.id("submit"));
+		int y=submit.getLocation().getY();
+		
+		JavascriptExecutor jse=(JavascriptExecutor) driver;
+		String str1="window.scrollTo(0,"+y+")";
+		jse.executeScript(str1);
+		
+		String str2="arguments[0].click()";
+		jse.executeScript(str2, submit);
+//		submit.click();
+		
 		
 		driver.close();
 	}
