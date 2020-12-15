@@ -35,11 +35,11 @@ public class FacebookLoginAndLogoutUsingFluentWait {
 				
 		WebElement logout = driver.findElement(By.xpath("//span[text()='Log Out']"));
 		
-		Wait<WebDriver> wait=new FluentWait<WebDriver>(driver)
-				.withTimeout(30,TimeUnit.SECONDS)
-				.pollingEvery(5,TimeUnit.SECONDS)
-				.ignoring(NoSuchElementException.class);
-		wait.until(ExpectedConditions.elementToBeClickable(logout));
+//		Wait<WebDriver> wait=new FluentWait<WebDriver>(driver)
+//				.withTimeout(30,TimeUnit.SECONDS)
+//				.pollingEvery(5,TimeUnit.SECONDS)
+//				.ignoring(NoSuchElementException.class);
+//		wait.until(ExpectedConditions.elementToBeClickable(logout));
 		
 		logout.click();
 		
