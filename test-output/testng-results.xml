@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Inside Test01]]>
+    </line>
+    <line>
+      <![CDATA[Inside Test03]]>
+    </line>
+    <line>
+      <![CDATA[Inside Test02]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35" started-at="2020-12-21T12:23:57Z" finished-at="2020-12-21T12:23:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35" started-at="2020-12-21T12:23:57Z" finished-at="2020-12-21T12:23:57Z">
+      <class name="testngdemo.TestNGDemo_02">
+        <test-method status="PASS" signature="test01()[pri:1, instance:testngdemo.TestNGDemo_02@1bce4f0a]" name="test01" duration-ms="10" started-at="2020-12-21T17:53:57Z" finished-at="2020-12-21T17:53:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Inside Test01]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method status="PASS" signature="test03()[pri:2, instance:testngdemo.TestNGDemo_02@1bce4f0a]" name="test03" duration-ms="2" started-at="2020-12-21T17:53:57Z" depends-on-methods="testngdemo.TestNGDemo_02.test01" finished-at="2020-12-21T17:53:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Inside Test03]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="test02()[pri:3, instance:testngdemo.TestNGDemo_02@1bce4f0a]" name="test02" duration-ms="2" started-at="2020-12-21T17:53:57Z" finished-at="2020-12-21T17:53:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Inside Test02]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+      </class> <!-- testngdemo.TestNGDemo_02 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
