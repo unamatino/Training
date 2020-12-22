@@ -1,5 +1,11 @@
 package testngdemo;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -11,19 +17,19 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class TestNGDemo_01 {
-  @Test
+  @Test(groups= {"smoke"})
   public void test001() {
-	  System.out.println("Inside @Test Annotation");
+	  System.out.println("Inside @Test001 Annotation");
   }
   
-  @Test
+  @Test(groups= {"smoke"})
   public void pest001() {
-	  System.out.println("Inside @Test Annotation");
+	  System.out.println("Inside @Pest001 Annotation");
   }
   
-  @Test
+  @Test(groups= {"smoke"})
   public void qest001() {
-	  System.out.println("Inside @Test Annotation");
+	  System.out.println("Inside @Qest001 Annotation");
   }
   
   @BeforeMethod
