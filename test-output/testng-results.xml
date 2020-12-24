@@ -1,178 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Inside Test01]]>
+      <![CDATA[Before Soft Assert Object]]>
     </line>
     <line>
-      <![CDATA[User Registratioon Success!!]]>
+      <![CDATA[After Soft Assert Object]]>
     </line>
     <line>
-      <![CDATA[Inside Test03]]>
-    </line>
-    <line>
-      <![CDATA[User Login Success!!]]>
-    </line>
-    <line>
-      <![CDATA[User Login Success!!]]>
-    </line>
-    <line>
-      <![CDATA[User Login Success!!]]>
-    </line>
-    <line>
-      <![CDATA[Inside Test02]]>
-    </line>
-    <line>
-      <![CDATA[User Deleted Successfully!!]]>
-    </line>
-    <line>
-      <![CDATA[User Deleted Successfully!!]]>
+      <![CDATA[After Soft Assert Fail]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="57" started-at="2020-12-22T09:51:09Z" finished-at="2020-12-22T09:51:09Z">
+  <suite name="Default suite" duration-ms="32" started-at="2020-12-24T10:25:56Z" finished-at="2020-12-24T10:25:57Z">
     <groups>
-      <group name="regression">
-        <method signature="TestNGDemo_03.deleteUser()[pri:3, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="deleteUser" class="testngdemo.TestNGDemo_03"/>
-        <method signature="TestNGDemo_03.registerUser()[pri:1, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="registerUser" class="testngdemo.TestNGDemo_03"/>
-        <method signature="TestNGDemo_03.loginUser()[pri:2, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="loginUser" class="testngdemo.TestNGDemo_03"/>
-        <method signature="TestNGDemo_04.deleteUser()[pri:3, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="deleteUser" class="testngdemo.TestNGDemo_04"/>
-        <method signature="TestNGDemo_04.loginUser()[pri:2, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="loginUser" class="testngdemo.TestNGDemo_04"/>
-        <method signature="TestNGDemo_04.registerUser()[pri:1, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="registerUser" class="testngdemo.TestNGDemo_04"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="TestNGDemo_02.test01()[pri:1, instance:testngdemo.TestNGDemo_02@754ba872]" name="test01" class="testngdemo.TestNGDemo_02"/>
-        <method signature="TestNGDemo_02.test02()[pri:3, instance:testngdemo.TestNGDemo_02@754ba872]" name="test02" class="testngdemo.TestNGDemo_02"/>
-        <method signature="TestNGDemo_02.test03()[pri:2, instance:testngdemo.TestNGDemo_02@754ba872]" name="test03" class="testngdemo.TestNGDemo_02"/>
-        <method signature="TestNGDemo_01.pest001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="pest001" class="testngdemo.TestNGDemo_01"/>
-        <method signature="TestNGDemo_01.qest001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="qest001" class="testngdemo.TestNGDemo_01"/>
-        <method signature="TestNGDemo_01.test001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="test001" class="testngdemo.TestNGDemo_01"/>
-      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="57" started-at="2020-12-22T09:51:09Z" finished-at="2020-12-22T09:51:09Z">
-      <class name="testngdemo.TestNGDemo_02">
-        <test-method status="PASS" signature="test01()[pri:1, instance:testngdemo.TestNGDemo_02@754ba872]" name="test01" duration-ms="0" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
+    <test name="Default test" duration-ms="32" started-at="2020-12-24T10:25:56Z" finished-at="2020-12-24T10:25:57Z">
+      <class name="testngdemo.SoftAssertClassDemo_02">
+        <test-method status="PASS" signature="registerUser()[pri:0, instance:testngdemo.SoftAssertClassDemo_02@1bce4f0a]" name="registerUser" duration-ms="13" started-at="2020-12-24T15:55:57Z" finished-at="2020-12-24T15:55:57Z">
           <reporter-output>
             <line>
-              <![CDATA[Inside Test01]]>
+              <![CDATA[Before Soft Assert Object]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- test01 -->
-        <test-method status="PASS" signature="test03()[pri:2, instance:testngdemo.TestNGDemo_02@754ba872]" name="test03" duration-ms="1" started-at="2020-12-22T15:21:09Z" depends-on-methods="testngdemo.TestNGDemo_02.test01" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
             <line>
-              <![CDATA[Inside Test03]]>
+              <![CDATA[After Soft Assert Object]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- test03 -->
-        <test-method status="PASS" signature="test02()[pri:3, instance:testngdemo.TestNGDemo_02@754ba872]" name="test02" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
             <line>
-              <![CDATA[Inside Test02]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test02 -->
-      </class> <!-- testngdemo.TestNGDemo_02 -->
-      <class name="testngdemo.TestNGDemo_01">
-        <test-method status="PASS" signature="pest001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="pest001" duration-ms="7" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pest001 -->
-        <test-method status="PASS" signature="qest001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="qest001" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- qest001 -->
-        <test-method status="PASS" signature="test001()[pri:0, instance:testngdemo.TestNGDemo_01@77cd7a0]" name="test001" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test001 -->
-      </class> <!-- testngdemo.TestNGDemo_01 -->
-      <class name="testngdemo.TestNGDemo_04">
-        <test-method status="PASS" signature="registerUser()[pri:1, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="registerUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Registratioon Success!!]]>
+              <![CDATA[After Soft Assert Fail]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="loginUser()[pri:2, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="loginUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Login Success!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginUser -->
-        <test-method status="PASS" signature="loginUser()[pri:2, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="loginUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Login Success!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginUser -->
-        <test-method status="PASS" signature="deleteUser()[pri:3, instance:testngdemo.TestNGDemo_04@4dfa3a9d]" name="deleteUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Deleted Successfully!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- testngdemo.TestNGDemo_04 -->
-      <class name="testngdemo.TestNGDemo_03">
-        <test-method status="FAIL" signature="registerUser()[pri:1, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="registerUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.fail(Assert.java:100)
-	at testngdemo.TestNGDemo_03.registerUser(TestNGDemo_03.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="loginUser()[pri:2, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="loginUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" depends-on-methods="testngdemo.TestNGDemo_03.registerUser" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Login Success!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginUser -->
-        <test-method status="PASS" signature="deleteUser()[pri:3, instance:testngdemo.TestNGDemo_03@146ba0ac]" name="deleteUser" duration-ms="1" started-at="2020-12-22T15:21:09Z" finished-at="2020-12-22T15:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[User Deleted Successfully!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- testngdemo.TestNGDemo_03 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testngdemo.SoftAssertClassDemo_02 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
