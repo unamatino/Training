@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testngdemo.AssertClassDemo_02">
+      <class name="excelHandling.ReadingSingleCellDataFromExcelFile">
         <methods>
-          <include name="registerUser"/>
+          <include name="readExcelFile"/>
         </methods>
-      </class> <!-- testngdemo.AssertClassDemo_02 -->
+      </class> <!-- excelHandling.ReadingSingleCellDataFromExcelFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
