@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="excelHandling.ReadingSingleCellDataFromExcelFile">
+      <class name="advance.SelectClassDeselectAll">
         <methods>
-          <include name="readExcelFile"/>
+          <include name="singleSelect"/>
         </methods>
-      </class> <!-- excelHandling.ReadingSingleCellDataFromExcelFile -->
+      </class> <!-- advance.SelectClassDeselectAll -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

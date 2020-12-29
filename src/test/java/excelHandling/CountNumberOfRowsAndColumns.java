@@ -5,18 +5,16 @@ import java.io.FileInputStream;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
-public class ReadingSingleCellDataFromExcelFile {
+public class CountNumberOfRowsAndColumns {
 	@Test
 	public void readExcelFile() throws Exception{
 		String filepath="./excel/NameData.xlsx";
 		FileInputStream fis=new FileInputStream(filepath);
 		XSSFWorkbook workbook=new XSSFWorkbook(fis);
-//		XSSFSheet sheet = workbook.getSheet("name");
-//		XSSFRow row = sheet.getRow(3);
-//		XSSFCell cell = row.getCell(2);
-//		String data = cell.toString();
-		String data=workbook.getSheetAt(0).getRow(0).getCell(0).toString();
+		int cols=workbook.getSheet("Political").getRow(0).getLastCellNum();
+		int rows=workbook.getSheet("Political").getPhysicalNumberOfRows();
 		workbook.close();
-		System.out.println("Data: "+data);
+		System.out.println("Number of Columns: "+cols);
+		System.out.println("Number of Rows: "+rows);
 	}
 }
