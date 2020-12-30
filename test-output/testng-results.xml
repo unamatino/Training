@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="409" started-at="2020-12-29T10:32:20Z" finished-at="2020-12-29T10:32:21Z">
+  <suite name="Default suite" duration-ms="475" started-at="2020-12-30T10:48:27Z" finished-at="2020-12-30T10:48:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="409" started-at="2020-12-29T10:32:20Z" finished-at="2020-12-29T10:32:21Z">
-      <class name="excelHandling.ReadingAllOddDataFromExcelFile">
-        <test-method status="PASS" signature="readExcelFile()[pri:0, instance:excelHandling.ReadingAllOddDataFromExcelFile@1a968a59]" name="readExcelFile" duration-ms="395" started-at="2020-12-29T16:02:21Z" finished-at="2020-12-29T16:02:21Z">
+    <test name="Default test" duration-ms="475" started-at="2020-12-30T10:48:27Z" finished-at="2020-12-30T10:48:27Z">
+      <class name="excelHandling.WriteDataInExcelFileUsingEnhancedFoorLoop">
+        <test-method status="PASS" signature="writeData()[pri:0, instance:excelHandling.WriteDataInExcelFileUsingEnhancedFoorLoop@1a968a59]" name="writeData" duration-ms="459" started-at="2020-12-30T16:18:27Z" finished-at="2020-12-30T16:18:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readExcelFile -->
-      </class> <!-- excelHandling.ReadingAllOddDataFromExcelFile -->
+        </test-method> <!-- writeData -->
+      </class> <!-- excelHandling.WriteDataInExcelFileUsingEnhancedFoorLoop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
