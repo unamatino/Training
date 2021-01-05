@@ -1,11 +1,16 @@
 package library;
 
 public interface Constants {
-	String sheetName="Geology";
-	String excelPath="./excel/NameData.xlsx";
-	String appURL=Excel.readExcelData(excelPath, sheetName, 0, 0);
-	String instagram=Excel.readExcelData(excelPath, sheetName, 0, 1);
-	String twitter=Excel.readExcelData(excelPath, sheetName, 1, 1);
-	String instagramExpTitle=Excel.readExcelData(excelPath, sheetName, 0, 2);
-	String twitterExpTitle=Excel.readExcelData(excelPath, sheetName, 1, 2);
+	String excelPath="./excel/SauceLabs.xlsx";
+	String sheetname="loginpage";
+	
+	String validAppURL=Excel.readExcelData(excelPath, sheetname, 1, 0);
+	String inValidAppURL=Excel.readExcelData(excelPath, sheetname, 1, 1);
+	String inventoryURL=Excel.readExcelData(excelPath, sheetname, 2, 0);
+	
+	String username=Excel.readExcelData(excelPath, sheetname, 1, 2);
+	String password=Excel.readExcelData(excelPath, sheetname, 1, 3);
+	
+	String invalidUsername=Excel.readExcelData(excelPath, sheetname, 2, 2);
+	String invalidPassword=Excel.readExcelData(excelPath, sheetname, 2, 3);
 }

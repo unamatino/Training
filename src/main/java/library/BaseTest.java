@@ -10,14 +10,14 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest implements Constants {
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	@BeforeMethod
 	public void launchBrowserAndApplication() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(appURL);
+		driver.get(validAppURL);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 	}
